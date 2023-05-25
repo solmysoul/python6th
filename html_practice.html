@@ -4,7 +4,87 @@
         <title>My First Webpage</title>
     </head>
     <body>
-
+    <h1>Welcome(h1)</h1>
+    <h2>Welcome(h2)</h2>
+    <h3>Welcome(h3)</h3>
+    <br>
+    <h1>paragraph</h1>
+    <p>This is a paragraph</p>
+    <p>This is another <strong>paragraph</strong> of <i>text</i></p>
+    <br>
+    <h1>Links</h1>
+    <a title="Google Website" href="https://google.com" target="_blank">Link To Google</a>
+    <br>
+    <h1>Image</h1>
+    <img src="https://picsum.photos/200/300">
+    <br>
+    <h1>Lists</h1>
+    <ul class="list-unstyled">
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+    </ul>
+    <ol>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+    </ol>
+    <br>
+    <h1>Tables</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Gildong</td>
+            <td>Hong</td>
+            <td>gildong@naver.com</td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <h1>Registration Form</h1>
+    <form>
+        <fieldset>
+            <legend>Account</legend>
+            <label>Name</label>
+            <br>
+            <input type="text" name="name" required>
+            <br>
+            <label>Email</label>
+            <br>
+            <input type="email" name="email">
+        </fieldset>
+        <fieldset>
+            <legend>User Info</legend>
+            <label>Location</label>
+            <br>
+            <select name="Location">
+             <option value="MA">MA</option>
+             <option value="NY">NY</option>
+             <option value="CA">CA</option>
+            </select>
+            <br>
+            <label>Gender</label>
+            <br>
+            <input type="radio" name="gender" value="Male"/> Male
+            <input type="radio" name="gender" value="Female" checked/> Female
+            <br>
+            <label>Interest</label>
+            <br>
+            <input type="checkbox" name="interest" value="Movie" checked /> Movie
+            <input type="checkbox" name="interest" value="Music" /> Music
+            <input type="checkbox" name="interest" value="Sports" checked /> Sports
+            <input type="checkbox" name="interest" value="Art"  /> Art
+            <br>
+        </fieldset>
+        <input type="submit" value="등록">
+    </form>
     </body>
 </html>
 
