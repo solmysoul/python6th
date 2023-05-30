@@ -1,15 +1,30 @@
 
-var name = "이한솔";
-var age = 26;
-var cgpa = 3.92;
-var lineBreak = "<br/>";
+var lastName = "홍";
+var firstName = "길동";
 
-document.write("이름: " + name + lineBreak);
-document.write("나이: " + age + lineBreak);
-document.write("학점: " + cgpa + lineBreak);
+var fullname = lastName + firstName;
+
+console.log(fullname);
+console.log("Today is" + " a " + "beautiful day");
+console.log("My name is " + fullname);
+
+var num1 = 20;
+var num2 = 30;
+var sum = num1 + num2;
+console.log(num1 + " + " + num2 + " = " + sum);
+console.log(num1 + num2);
+console.log("" + num1 + num2);
 
 
 
+//var name = "이한솔"; //3
+//var age = 26;
+//var cgpa = 3.92;
+//var lineBreak = "<br/>";
+//
+//document.write("이름: " + name + lineBreak);
+//document.write("나이: " + age + lineBreak);
+//document.write("학점: " + cgpa + lineBreak);
 
 
 
@@ -18,7 +33,7 @@ document.write("학점: " + cgpa + lineBreak);
 //console.log("123", typeof "123");
 //console.log(true, typeof true);
 //console.log(false, typeof false); //동적타입
-//
+//수
 //var car;
 //console.log(typeof car);
 //var car = "";
