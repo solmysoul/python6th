@@ -1,13 +1,13 @@
 
-var base = parseFloat(prompt("Enter 밑변 입력 : "));
-var height = parseFloat(prompt("Enter 높이 입력 : "));
-
-var area = base * height * 0.5;
-
-document.write("삼각형의 넓이 : " + area);
-
-
-
+//var base = parseFloat(prompt("Enter 밑변 입력 : "));
+//var height = parseFloat(prompt("Enter 높이 입력 : "));
+//
+//var area = base * height * 0.5;
+//
+//document.write("삼각형의 넓이 : " + area);
+//
+//
+//
 //var num1 = parseInt(prompt("Enter first number: ")); // 7
 //var num2 = parseInt(prompt("Enter second number: "));
 //var lineBreak = "<br/>";
@@ -29,7 +29,7 @@ document.write("삼각형의 넓이 : " + area);
 
 
 
-//var num = "20"; //6
+//var num = "20";
 //num = num.toString();
 //console.log(typeof num);
 //
@@ -54,7 +54,7 @@ document.write("삼각형의 넓이 : " + area);
 
 
 
-//var text = prompt("Enter your name:"); //5
+//var text = prompt("Enter your name : ");
 //document.write("Your name : " + text + "<br/>");
 //
 //var len = text.length;
@@ -62,8 +62,8 @@ document.write("삼각형의 넓이 : " + area);
 //
 //document.write(text.charAt(2) + "<br/>");
 //
-//document.write(text.toUpperCase() + "<br/>");
-//document.write(text.toLowerCase() + "<br/>");
+//document.write(text.toUpperCase()  + "<br/>");
+//document.write(text.toLowerCase()  + "<br/>");
 //
 //var text1 = "hi, ";
 //var text2 = "bye";
@@ -75,6 +75,9 @@ document.write("삼각형의 넓이 : " + area);
 //var text5 = "hello";
 //var result = text5.slice(3,4);
 //document.write(result + "<br/>");
+
+
+
 
 
 
@@ -94,8 +97,8 @@ document.write("삼각형의 넓이 : " + area);
 //console.log(num1 + num2);
 //console.log("" + num1 + num2);
 
-
-
+//
+//
 //var name = "이한솔"; //3
 //var age = 26;
 //var cgpa = 3.92;
@@ -123,9 +126,9 @@ document.write("삼각형의 넓이 : " + area);
 //person = null;
 //
 //console.log(typeof person, person);
-
-
-
+//
+//
+//
 //document.write("Hello World"); //1
 //document.write("<h1>Welcome to JS Program</h1>")
 //document.write("<h2>Welcome to JS program</h2>")
