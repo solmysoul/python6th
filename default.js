@@ -1,20 +1,34 @@
 
-console.log(123, typeof 123);
-console.log(123.5, typeof 123.5);
-console.log("123", typeof "123");
-console.log(true, typeof true);
-console.log(false, typeof false); //동적타입
+var name = "이한솔";
+var age = 26;
+var cgpa = 3.92;
+var lineBreak = "<br/>";
 
-var car;
-console.log(typeof car);
-var car = "";
-console.log(typeof car);
+document.write("이름: " + name + lineBreak);
+document.write("나이: " + age + lineBreak);
+document.write("학점: " + cgpa + lineBreak);
 
-var person = {firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue"};
-console.log(typeof person, person);
-person = null;
 
-console.log(typeof person, person);
+
+
+
+
+//console.log(123, typeof 123); //2
+//console.log(123.5, typeof 123.5);
+//console.log("123", typeof "123");
+//console.log(true, typeof true);
+//console.log(false, typeof false); //동적타입
+//
+//var car;
+//console.log(typeof car);
+//var car = "";
+//console.log(typeof car);
+//
+//var person = {firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue"};
+//console.log(typeof person, person);
+//person = null;
+//
+//console.log(typeof person, person);
 
 
 
