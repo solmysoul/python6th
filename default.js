@@ -19,8 +19,11 @@ console.log("학생 배열의 길이: ", students.length);
 students.push("한솔");
 console.log("push 후 학생 배열 = " + students);
 
+var element = students.pop()//마지막 요소를 뱉어냄
+console.log(element);
+
 //배열의 요소 삭제하기
-students.pop(); //마지막 요소를 뱉어냄
+students.pop();
 console.log("pop 후 학생 배열 = " + students);
 
 //배열 연결하기
