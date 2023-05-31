@@ -1,17 +1,37 @@
 
-var i = 1;
+//break 와 continue 이해하기
 
-do {
-    document.write("멋쟁이사자 : " + i++ + "<br/>");
-} while (i < 1)
-// i = 10 도 실습
-document.write("======<br/>");
-
-var j = 1;
-
-while(j < 1) {
-    document.write("멋쟁이사자 : " + j++ + "<br/>");
+for (var i = 1; i <= 100; i++) {
+    if(i == 20) {
+        break;
+    }
+    document.write(i + "<br/>");
 }
+
+document.write("=========<br/>");
+
+for (var k = 1; k <= 100; k++) {
+    if(k ==20) {
+        continue;
+    }
+    document.write(k + "<br/>");
+}
+
+
+
+//var i = 1;
+//
+//do {
+//    document.write("멋쟁이사자 : " + i++ + "<br/>");
+//} while (i < 1)
+//// i = 10 도 실습
+//document.write("======<br/>");
+//
+//var j = 1;
+//
+//while(j < 1) {
+//    document.write("멋쟁이사자 : " + j++ + "<br/>");
+//}
 
 
 
