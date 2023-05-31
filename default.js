@@ -1,32 +1,46 @@
 
-//매개변수가 없는 함수 생성하기
+(function display(message) {
+    console.log(message);
+})("hi");
 
-function message() {
-    document.write("Hello, I am a function without parameter" + "<br/>");
+var display2 = function displayMessage(msg) {
+    console.log(msg);
 }
 
-//한개의 매개변수를 가진 함수 생성하기
-function welcomeMessage(name) {
-    document.write("Welcome" + name + "<br/");
-}
+display2("I am message");
 
-//여러 개의 매개변수를 가진 함수 생성
-function addition(num1, num2) {
-    var sum = num1 + num2;
-    document.write("addition is" + sum + "<br/");
-}
-
-//값을 반환하는 함수
-function square(num) {
-    return num + num;
-}
-
-message();
-welcomeMessage("이한솔");
-addition(2,3);
-document.write("square of 5 is " + square(5) + "<br/>");
+(function addNumbers(a,b) {
+    console.log(a + b);
+})(3,4);
 
 
+
+////매개변수가 없는 함수 생성하기
+//
+//function message() {
+//    document.write("Hello, I am a function without parameter" + "<br/>");
+//}
+//
+////한개의 매개변수를 가진 함수 생성하기
+//function welcomeMessage(name) {
+//    document.write("Welcome" + name + "<br/>");
+//}
+//
+////여러 개의 매개변수를 가진 함수 생성
+//function addition(num1, num2) {
+//    var sum = num1 + num2;
+//    document.write("addition is" + sum + "<br/>");
+//}
+//
+////값을 반환하는 함수
+//function square(num) {
+//    return num * num;
+//}
+//
+//message();
+//welcomeMessage("이한솔");
+//addition(2,3);
+//document.write("square of 5 is " + square(5) + "<br/>");
 
 
 
@@ -181,7 +195,7 @@ document.write("square of 5 is " + square(5) + "<br/>");
 //
 //document.write("화씨 : " + farn);
 
-
+//============20230530============
 
 //var base = parseFloat(prompt("Enter 밑변 입력 : "));
 //var height = parseFloat(prompt("Enter 높이 입력 : "));
