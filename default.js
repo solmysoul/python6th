@@ -1,21 +1,52 @@
 
-//break 와 continue 이해하기
+//매개변수가 없는 함수 생성하기
 
-for (var i = 1; i <= 100; i++) {
-    if(i == 20) {
-        break;
-    }
-    document.write(i + "<br/>");
+function message() {
+    document.write("Hello, I am a function without parameter" + "<br/>");
 }
 
-document.write("=========<br/>");
-
-for (var k = 1; k <= 100; k++) {
-    if(k ==20) {
-        continue;
-    }
-    document.write(k + "<br/>");
+//한개의 매개변수를 가진 함수 생성하기
+function welcomeMessage(name) {
+    document.write("Welcome" + name + "<br/");
 }
+
+//여러 개의 매개변수를 가진 함수 생성
+function addition(num1, num2) {
+    var sum = num1 + num2;
+    document.write("addition is" + sum + "<br/");
+}
+
+//값을 반환하는 함수
+function square(num) {
+    return num + num;
+}
+
+message();
+welcomeMessage("이한솔");
+addition(2,3);
+document.write("square of 5 is " + square(5) + "<br/>");
+
+
+
+
+
+////break 와 continue 이해하기
+//
+//for (var i = 1; i <= 100; i++) {
+//    if(i == 20) {
+//        break;
+//    }
+//    document.write(i + "<br/>");
+//}
+//
+//document.write("=========<br/>");
+//
+//for (var k = 1; k <= 100; k++) {
+//    if(k ==20) {
+//        continue;
+//    }
+////    document.write(k + "<br/>");
+//}
 
 
 
