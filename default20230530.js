@@ -1,4 +1,11 @@
 
+var cels = parseFloat(prompt("섭씨 입력: "));
+var farn = cels * (9 / 5) + 32;
+
+document.write("화씨 : " + farn);
+
+
+
 //var base = parseFloat(prompt("Enter 밑변 입력 : "));
 //var height = parseFloat(prompt("Enter 높이 입력 : "));
 //
