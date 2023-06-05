@@ -185,14 +185,29 @@
 # int_value = int(value)
 # print(int_value, type(int_value))
 
-q = 20
-u = '10'
-print(type(u))
-r = q + int(u)
-print(r, type(r))
-r = str(q) + u
-print(r, type(r))
+# q = 20
+# u = '10'
+# print(type(u))
+# r = q + int(u)
+# print(r, type(r))
+# r = str(q) + u
+# print(r, type(r))
 
+# n1 = 10.36
+# vn1 = int(n1)
+
+# print(vn1, type(vn1))
+
+n5 = "멋쟁이 사자"
+vn5 = tuple(n5)
+
+print(vn5, type(vn5))
+
+n5 = ("kim", "Bae")
+vn5 = list(n5)
+
+print(n5, type(n5))
+print(vn5, type(vn5))
 
 
 
