@@ -209,11 +209,39 @@
 # print(n5, type(n5))
 # print(vn5, type(vn5))
 
-print("1", "2", "3")
+# print("1", "2", "3")
+#
+# print("1")
+# print("2", end='')
+# print("3")
 
-print("1")
-print("2", end='')
-print("3")
+# 문자열 구분자
+
+# data = [10, 20, -50, 21.3, 'LikeLion']
+# print(data)
+#
+# print("Like", "Share", "Subscribe")
+# print("Like", "Share", "Subscribe", sep='')
+# print("Like", "Share", "Subscribe", sep='**')
+
+# print("Like", "Share", "Subscribe", sep='**', end='\t')
+# print("Like", "Share", "Subscribe", sep='**', end='\t')
+
+# ====================
+
+# m = 40
+# print("value: ", m)
+#
+# name = "이한솔"
+# age = 26
+# print("My name is", name, "and My age is", age)
+
+# print("Welcome", end='\t')
+# print("to", end='\t')
+# print("LikeLion")
+
+
+
 
 
 
