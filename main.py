@@ -136,22 +136,44 @@
 # st3 = "Welcome to 멋쟁이 사자"
 # print("subs" not in st3)
 
-#=============================
+# =============================
+#
+# #is 연산자
+#
+# a = 10
+# b = 10
+# print(a is b)
+# print(a is not b)
+#
+# a = 10
+# b = '10'
+# print(a is b)
 
-#is 연산자
+# 암시적 타입 변환
 
-a = 10
-b = 10
-print(a is b)
-print(a is not b)
+a = 5
+b = 2
+print(b, type(b))
+value = a / b
+print(value)
+print(type(value))
 
-a = 10
-b = '10'
-print(a is b)
+x = 10
+y = 5.5
+total = x + y
+print(total)
+print(type(total))
 
+j = "Hello "
+k = "Like lion"
+p = j + k
+print(p)
+print(type(p))
 
-
-
+q = 20
+u = '10'
+r = q + u #오류
+print(r)
 
 
 
