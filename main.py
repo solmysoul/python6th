@@ -80,9 +80,9 @@
 # print('NOT 연산자')
 # print('not(a < b): ', not(a < b))
 
-#=======================
+# #=======================
 
-##할당 연산자 =
+# #할당 연산자 =
 # a = 10
 # b = 20
 # m = 15
@@ -99,22 +99,42 @@
 # m //= 10
 # print(m)
 
-#비트 연산자
+# #비트 연산자
 
-a = 10
-b = 15
+# a = 10
+# b = 15
+#
+# print('a: ', bin(a))
+#
+# print('b: ', bin(b))
+#
+# print('~a = ', ~a, bin(~a))
+#
+# print('a & b: ', a & b)
+#
+# print('a << 2: ', a << 2)
 
-print('a: ', bin(a))
+#========================
 
-print('b: ', bin(b))
+# 멤버 in 연산자
 
-print('~a = ', ~a, bin(~a))
+st1 = "Welcome to 멋쟁이 사자"
+print("to" in st1)
 
-print('a & b: ', a & b)
+st2 = "Welcome top 멋쟁이 사자"
+print("to" in st2)
 
-print('a << 2: ', a << 2)
+st3 = "Welcome to 멋쟁이 사자"
+print("subs" in st3)
 
+st1 = "Welcome to 멋쟁이 사자"
+print("to" not in st1)
 
+st2 = "Welcome top 멋쟁이 사자"
+print("to" not in st2)
+
+st3 = "Welcome to 멋쟁이 사자"
+print("subs" not in st3)
 
 
 
