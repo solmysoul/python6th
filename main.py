@@ -440,42 +440,107 @@
 #     print(stu_roll[i])
 #     i += 1
 
-# 배열 삽입
+# # 배열 삽입
+# from array import *
+# stu_roll = array('i', [101, 102, 103, 104, 105])
+# n = len(stu_roll)
+# i = 0
+# while i < n:
+#     print(stu_roll[i])
+#     i += 1
+#
+# print("Array After Insert")
+# stu_roll.insert(1, 106)
+# stu_roll.insert(3, 107)
+# n = len(stu_roll)
+# i = 0
+# while i < n:
+#     print(stu_roll[i])
+#     i += 1
+#
+# print("Array After Remove")
+#
+# stu_roll.remove(107)
+# n = len(stu_roll)
+# i = 0
+# while i < n:
+#     print(stu_roll[i])
+#     i += 1
+#
+# print("Array pop()")
+#
+# element = stu_roll.pop()
+# print("element", element)
+# n = len(stu_roll)
+# i = 0
+# while i < n:
+#     print(stu_roll[i])
+#     i += 1
+
+# from array import *
+# stu_roll = array('i', [101, 102, 103, 104, 105])
+# print(stu_roll.index(105))
+#
+# print("extend() 메소드")
+# arr = array('i', [201, 208, 210])
+# stu_roll.extend(arr)
+# n = len(stu_roll)
+# i = 0
+# while i < n:
+#     print(stu_roll[i])
+#     i += 1
+#
+# print("reverse() 메소드")
+# stu_roll.reverse()
+# n = len(stu_roll)
+# i = 0
+# while i < n:
+#     print(stu_roll[i])
+#     i += 1
+
 from array import *
-stu_roll = array('i', [101, 102, 103, 104, 105])
+stu_roll = array('i', [101, 102, 103, 104, 105, 106, 107])
+print("배열 슬라이싱")
+print(stu_roll[2:3])
+print(stu_roll[0:])
+print(stu_roll[-2:])
+
 n = len(stu_roll)
-i = 0
-while i < n:
-    print(stu_roll[i])
-    i += 1
+for i in range(n):
+    print(i, "=", stu_roll[i])
 
-print("Array After Insert")
-stu_roll.insert(1, 106)
-stu_roll.insert(3, 107)
-n = len(stu_roll)
-i = 0
-while i < n:
-    print(stu_roll[i])
-    i += 1
+print("1:5까지")
+a = stu_roll[1:6]
+for i in a:
+    print(i)
 
-print("Array After Remove")
+print("0번째 부터 끝까지")
+b = stu_roll[0:]
+for i in b:
+    print(i)
 
-stu_roll.remove(107)
-n = len(stu_roll)
-i = 0
-while i < n:
-    print(stu_roll[i])
-    i += 1
+print("처음부터 5번째까지")
+c = stu_roll[:6]
+for i in c:
+    print(i)
 
-print("Array pop()")
+print("마지막 요소 4개")
+d = stu_roll[-4:]
+for i in d:
+    print(i)
 
-element = stu_roll.pop()
-print("element", element)
-n = len(stu_roll)
-i = 0
-while i < n:
-    print(stu_roll[i])
-    i += 1
+print("0부터 6번째까지 2개씩 건너 뛰어 출력")
+e = stu_roll[0:7:2]
+for i in e:
+    print(i)
+
+print("마지막 5개의 요소 중 오른쪽으로부터 2개의 요소를 출력")
+f = stu_roll[-5:-3]
+for i in f:
+    print(i)
+
+
+
 
 
 
