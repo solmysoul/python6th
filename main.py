@@ -258,65 +258,116 @@
 # print('He said, "Hello,World"')
 # print("He said, \"Hello,World\"")
 
-# if 문
+# # if 문
+#
+# x = 5
+# if x > 3:
+#     print("x는 3보다 큽니다.")
+#
+# # if else
+# age = 18
+# if age >= 18:
+#     print("성인입니다.")
+# else:
+#     print("미성년자입니다.")
+#
+# # 중첩된 if else
+#
+# score = 85
+# if score >= 90:
+#     print("A 학점")
+# else:
+#     if score >= 80:
+#         print("B 학점")
+#     else:
+#         if score >= 70:
+#             print("C 학점")
+#         else:
+#             print("D 학점")
+#
+# # if elif
+#
+# marks = 75
+# if marks >= 90:
+#     print("A 등급")
+# elif marks >= 80:
+#     print("B 등급")
+# elif marks >= 70:
+#     print("C 등급")
+# else:
+#     print("D 등급")
+#
+# a = int(input("Enter Number Greater then 2:"))
+# if a > 2:
+#     print("You have entered:", a)
+#
+# a = int(input("Enter Number Greater then 2:"))
+# if a >= 2:
+#     print("Correct!! You have entered:", a)
+# else:
+#     print("Wrong!! You have entered:", a)
+#
+# day = input("요일을 입력하세요: ")
+# if day == "Mon":
+#     print("오늘은 월요일")
+# elif day == "Tue":
+#     print("오늘은 화요일")
+# elif day == "Wed":
+#     print("오늘은 수요일")
+# else:
+#     print("휴일")
 
-x = 5
-if x > 3:
-    print("x는 3보다 큽니다.")
+# i = 0
+# while i < 10:
+#     i += 1
+#     print("i: ", i)
+# else:
+#     print("else")
+#
+# while True:
+#     a = input("Enter Menu Number: ")
+#     if a == '0':
+#         break
+#     print("a: ", a)
+# else:
+#     print("else")
 
-# if else
-age = 18
-if age >= 18:
-    print("성인입니다.")
-else:
-    print("미성년자입니다.")
+# while loop
 
-# 중첩된 if else
+# a = 1
+# while a <= 10:
+#     print(a)
+#     a += 1
+# print("코드종료")
 
-score = 85
-if score >= 90:
-    print("A 학점")
-else:
-    if score >= 80:
-        print("B 학점")
-    else:
-        if score >= 70:
-            print("C 학점")
-        else:
-            print("D 학점")
+# a = 2
+# while a <= 20:
+#     print(a)
+#     a += 2
+# print("코드종료")
 
-# if elif
+# a = 1
+# while a <= 10:
+#     print(a)
+#     a += 1
+# else:
+#     print("while 조건이 거짓이므로 Else 부분 실행됨")
+# print("코드 종료")
 
-marks = 75
-if marks >= 90:
-    print("A 등급")
-elif marks >= 80:
-    print("B 등급")
-elif marks >= 70:
-    print("C 등급")
-else:
-    print("D 등급")
+# # 무한 루프
+# while True:
+#     print("멋쟁이 사자")
+# print("코드종료")
 
-a = int(input("Enter Number Greater then 2:"))
-if a > 2:
-    print("You have entered:", a)
-
-a = int(input("Enter Number Greater then 2:"))
-if a >= 2:
-    print("Correct!! You have entered:", a)
-else:
-    print("Wrong!! You have entered:", a)
-
-day = input("요일을 입력하세요: ")
-if day == "Mon":
-    print("오늘은 월요일")
-elif day == "Tue":
-    print("오늘은 화요일")
-elif day == "Wed":
-    print("오늘은 수요일")
-else:
-    print("휴일")
-
+# i = 1
+# while i <= 3:
+#     print("Outer Loop", i)
+#     i += 1
+#     j = 1
+#     while j <= 5:
+#         print("Inner Loop", j)
+#         j += 1
+# print("코드 종료 ")
 
 
 
