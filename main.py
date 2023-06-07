@@ -599,29 +599,69 @@
 # print(s.startswith("Hello"))
 # print(s.endswith("World"))
 
-print("인자가 없는 함수")
-def disp():
-    name = "멋쟁이 사자"
-    print("Welcome to", name)
+# print("인자가 없는 함수")
+# def disp():
+#     name = "멋쟁이 사자"
+#     print("Welcome to", name)
+#
+# print("함수 실행")
+# disp()
+# disp()
+# disp()
+#
+# def add():
+#     x = 10
+#     y = 20
+#     c = x + y
+#     print(c)
+#
+# add()
+#
+# def add(y):
+#     x = 10.234
+#     print(x + y)
+#     print(f"Formatted Output {x + y:5.2f}")
+# add(20)
 
-print("함수 실행")
-disp()
-disp()
-disp()
-
+print("반환")
 def add():
     x = 10
     y = 20
     c = x + y
-    print(c)
+    return c
 
-add()
+
+sum1 = add()
+print(sum1)
+
+def add2():
+    x = 10
+    y = 20
+    return x + y
+
+
+sum2 = add2()
+print(sum2)
 
 def add(y):
-    x = 10.234
-    print(x + y)
-    print(f"Formatted Output {x + y:5.2f}")
-add(20)
+    x = 10
+    return x + y
+
+
+sum3 = add(20)
+print(sum3)
+
+def add(y):
+    x = 10
+    c = x + y
+    d = y - x
+    return c, d, 50
+
+sum4, sub1, a = add(20)
+print(sum4)
+print(sub1)
+print(a)
+
 
 
 
