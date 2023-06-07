@@ -662,21 +662,30 @@
 # print(sub1)
 # print(a)
 
-def disp():
-    def show():
-        print("Show Function")
-    print("Disp Function")
-    show()
+# def disp():
+#     def show():
+#         print("Show Function")
+#     print("Disp Function")
+#     show()
+#
+# disp()
+#
+# def disp():
+#     def show():
+#         return "Show Function"
+#     result = show() + "Disp Function"
+#     return result
+#
+# print(disp())
 
-disp()
+def disp(sh):
+    print(type(sh))
+    print("Disp function" + sh())
 
-def disp():
-    def show():
-        return "Show Function"
-    result = show() + "Disp Function"
-    return result
+def show():
+    return " Show Function"
 
-print(disp())
+disp(show)
 
 
 
