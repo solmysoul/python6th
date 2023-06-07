@@ -584,10 +584,45 @@
 # print(s.isdigit())
 # print(s.isalpha())
 
-s = " Hello World "
-print(s.lstrip())
-print(s.rstrip())
-print(s.strip())
+# s = " Hello World "
+# print(s.lstrip())
+# print(s.rstrip())
+# print(s.strip())
+
+# s = "Hello, World"
+# print(s.replace("World", "there"))
+# print(s.replace("world".title(), "there"))
+# split_str = s.split(",")
+# print(split_str)
+# print(" ".join(split_str))
+#
+# print(s.startswith("Hello"))
+# print(s.endswith("World"))
+
+print("인자가 없는 함수")
+def disp():
+    name = "멋쟁이 사자"
+    print("Welcome to", name)
+
+print("함수 실행")
+disp()
+disp()
+disp()
+
+def add():
+    x = 10
+    y = 20
+    c = x + y
+    print(c)
+
+add()
+
+def add(y):
+    x = 10.234
+    print(x + y)
+    print(f"Formatted Output {x + y:5.2f}")
+add(20)
+
 
 
 
