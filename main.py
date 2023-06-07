@@ -678,14 +678,23 @@
 #
 # print(disp())
 
-def disp(sh):
-    print(type(sh))
-    print("Disp function" + sh())
+# def disp(sh):
+#     print(type(sh))
+#     print("Disp function" + sh())
+#
+# def show():
+#     return " Show Function"
+#
+# disp(show)
 
-def show():
-    return " Show Function"
+def disp():
+    def show():
+        return "Show Function"
+    print("Disp Function")
+    return show
 
-disp(show)
+r_sh = disp()
+print(r_sh(), type(r_sh))
 
 
 
