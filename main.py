@@ -416,30 +416,66 @@
 # else:
 #     print("6보다 큼")
 
-# 배열 생성 및 원소 접근
-import array
-stu_roll = array.array('i', [101, 102, 103, 104, 105])
-print(stu_roll[0])
-print(stu_roll[1])
-print(stu_roll[2])
-print(stu_roll[3])
-print(stu_roll[4])
+# # 배열 생성 및 원소 접근
+# import array
+# stu_roll = array.array('i', [101, 102, 103, 104, 105])
+# print(stu_roll[0])
+# print(stu_roll[1])
+# print(stu_roll[2])
+# print(stu_roll[3])
+# print(stu_roll[4])
+#
+# print("for in 사용")
+# for element in stu_roll:
+#     print(element)
+#
+# print("인덱스를 이용한 순회")
+# n = len(stu_roll)
+# for i in range(n):
+#     print(i, "=", stu_roll[i])
+#
+# print("인덱스를 사용한 while 루프 배열 순회")
+# i = 0
+# while i < n:
+#     print(stu_roll[i])
+#     i += 1
 
-print("for in 사용")
-for element in stu_roll:
-    print(element)
-
-print("인덱스를 이용한 순회")
+# 배열 삽입
+from array import *
+stu_roll = array('i', [101, 102, 103, 104, 105])
 n = len(stu_roll)
-for i in range(n):
-    print(i, "=", stu_roll[i])
-
-print("인덱스를 사용한 while 루프 배열 순회")
 i = 0
 while i < n:
     print(stu_roll[i])
     i += 1
 
+print("Array After Insert")
+stu_roll.insert(1, 106)
+stu_roll.insert(3, 107)
+n = len(stu_roll)
+i = 0
+while i < n:
+    print(stu_roll[i])
+    i += 1
+
+print("Array After Remove")
+
+stu_roll.remove(107)
+n = len(stu_roll)
+i = 0
+while i < n:
+    print(stu_roll[i])
+    i += 1
+
+print("Array pop()")
+
+element = stu_roll.pop()
+print("element", element)
+n = len(stu_roll)
+i = 0
+while i < n:
+    print(stu_roll[i])
+    i += 1
 
 
 
