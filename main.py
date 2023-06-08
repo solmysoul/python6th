@@ -782,4 +782,36 @@ def add(x,**num):
 
 add(3, a=5, b=2, c=4, d=3)
 
+def show():
+    x = 10
+    print(x)
+
+
+show()
+
+def add(y):
+    x = 10
+    print(x+y)
+
+
+add(20)
+
+a = 50 # 전역변수
+
+def show():
+    x = 10
+    print(x) # local변수, 함수 안에서만 호출 가능
+    print(a) # global변수, 모든 곳에서 호출 가능
+
+show()
+
+print("Global Variable: ", a)
+i = 0
+
+def myfun():
+    a = i + 1 # 여기서 a는 지역변수, 함수 안에서는 지역변수가 우선
+    print("My function", a)
+myfun()
+print("Global Variable a:", a)
+
 
