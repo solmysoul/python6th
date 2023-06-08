@@ -718,134 +718,159 @@
 # pw(2, 5)
 # pw(5, 2, 3) #함수 인자가 2개만 되는 경우에는 3개를 넣었을 시 오류
 
-print("키워드 인자")
-
-
-def show(name, age):
-    print(f"Name: {name} Age: {age}")  # 선언부
-
-
-show(name="멋쟁이사자", age=26)  # 함수파라미터를 키워드로 전달해서 순서 상관없이 실행할 수 있다. # 호출부
-# 모든 키워드 값을 넣지 않았을 시 실행이 되지 않는 오류 발생
-# 위와 같은 오류를 방지하기 위해 함수에 기본 값을 넣어줌
-# def show(name, age=27):
-
-
-# 컴파일 언어는 짠 코드를 특정 시점에 컴파일러가 파악해서 기계어로 변환
-# 스크립트 언어는 인터프리터를 가지고 있음, 인터프리터는 변환과정이 하나 더 있음, 입력한 코드를 구문 분석 후 재배치한 후 실행,
-# 즉 좀 더 유연함
-
-# ============================
-
-print("Example 1")
-
-
-def add(x, y):
-    z = x + y
-    print("Addition: ", z)
-
-
-add(5, 2)
-
-print("Example 2")
-
-
-def add(*num):  # *을 사용하면 여러개의 값을 넣을 수 있음
-    z = num[0] + num[1] + num[2]
-    print("Addition *: ", z)
-
-
-add(5, 2, 4)
-
-print("Example 3")
-
-
-def add(x, *num):
-    z = x + num[0] + num[1]
-    print("Addition x *: ", z)
-
-
-add(5, 2, 4)
-
-# command + option + L  자동서식지정 (들여쓰기 등)
-
-print("가변 키워드 인자")
-
-def add(**num):
-    z = num['a'] + num['b'] + num['c']
-    print("Addition: ", z)
-
-
-add(a=5, b=2, c=4, d=3) # 키워드에 없는 값을 넣어도 실행됨, 유연함, 그러나 추적 관찰이 어려움
-
-def add(x,**num):
-    z = x + num['a'] + num['b'] + num['c']
-    print("Addition: ", z)
-
-
-add(3, a=5, b=2, c=4, d=3)
-
-# =============================
-
-def show():
-    x = 10
-    print(x)
-
-
-show()
-
-def add(y):
-    x = 10
-    print(x+y)
-
-
-add(20)
-
-a = 50 # 전역변수
-
-def show():
-    x = 10
-    print(x) # local변수, 함수 안에서만 호출 가능
-    print(a) # global변수, 모든 곳에서 호출 가능
-
-show()
-
-print("Global Variable: ", a)
-i = 0
-
-def myfun():
-    a = i + 1 # 여기서 a는 지역변수, 함수 안에서는 지역변수가 우선
-    print("My function", a)
-myfun()
-print("Global Variable a:", a)
-
-
-# ==============================
-
+# print("키워드 인자")
+#
+#
+# def show(name, age):
+#     print(f"Name: {name} Age: {age}")  # 선언부
+#
+#
+# show(name="멋쟁이사자", age=26)  # 함수파라미터를 키워드로 전달해서 순서 상관없이 실행할 수 있다. # 호출부
+# # 모든 키워드 값을 넣지 않았을 시 실행이 되지 않는 오류 발생
+# # 위와 같은 오류를 방지하기 위해 함수에 기본 값을 넣어줌
+# # def show(name, age=27):
+#
+#
+# # 컴파일 언어는 짠 코드를 특정 시점에 컴파일러가 파악해서 기계어로 변환
+# # 스크립트 언어는 인터프리터를 가지고 있음, 인터프리터는 변환과정이 하나 더 있음, 입력한 코드를 구문 분석 후 재배치한 후 실행,
+# # 즉 좀 더 유연함
+#
+# # ============================
+#
+# print("Example 1")
+#
+#
+# def add(x, y):
+#     z = x + y
+#     print("Addition: ", z)
+#
+#
+# add(5, 2)
+#
+# print("Example 2")
+#
+#
+# def add(*num):  # *을 사용하면 여러개의 값을 넣을 수 있음
+#     z = num[0] + num[1] + num[2]
+#     print("Addition *: ", z)
+#
+#
+# add(5, 2, 4)
+#
+# print("Example 3")
+#
+#
+# def add(x, *num):
+#     z = x + num[0] + num[1]
+#     print("Addition x *: ", z)
+#
+#
+# add(5, 2, 4)
+#
+# # command + option + L  자동서식지정 (들여쓰기 등)
+#
+# print("가변 키워드 인자")
+#
+# def add(**num):
+#     z = num['a'] + num['b'] + num['c']
+#     print("Addition: ", z)
+#
+#
+# add(a=5, b=2, c=4, d=3) # 키워드에 없는 값을 넣어도 실행됨, 유연함, 그러나 추적 관찰이 어려움
+#
+# def add(x,**num):
+#     z = x + num['a'] + num['b'] + num['c']
+#     print("Addition: ", z)
+#
+#
+# add(3, a=5, b=2, c=4, d=3)
+#
+# # =============================
+#
+# def show():
+#     x = 10
+#     print(x)
+#
+#
+# show()
+#
+# def add(y):
+#     x = 10
+#     print(x+y)
+#
+#
+# add(20)
+#
+# a = 50 # 전역변수
+#
+# def show():
+#     x = 10
+#     print(x) # local변수, 함수 안에서만 호출 가능
+#     print(a) # global변수, 모든 곳에서 호출 가능
+#
+# show()
+#
+# print("Global Variable: ", a)
 # i = 0
 #
 # def myfun():
-#     i = i + 1
-#     print("My function i:", i)
+#     a = i + 1 # 여기서 a는 지역변수, 함수 안에서는 지역변수가 우선
+#     print("My function", a)
+# myfun()
+# print("Global Variable a:", a)
+#
+#
+# # ==============================
+#
+# # i = 0
+# #
+# # def myfun():
+# #     i = i + 1
+# #     print("My function i:", i)
+#
+# myfun() # 오류, i = i + 1 에서 오류 발생, 로컬인지 글로벌인지 명확하지 않음
+#
+# a = 50
+# def show():
+#     a = 10
+#     print("show-A: ",a)
+#
+# show()
+# print("A:,", a)
+#
+# def show2():
+#     global a
+#     print("show2-A: ", a)
+#     a = 20
+#     print("show2-A2: ", a)
+#
+# show2()
+# print("A: ", a)
 
-myfun() # 오류, i = i + 1 에서 오류 발생, 로컬인지 글로벌인지 명확하지 않음
+fruits = ["apple", "banana", "cherry", "orange"]
 
-a = 50
-def show():
-    a = 10
-    print("show-A: ",a)
+print(fruits)
 
-show()
-print("A:,", a)
+fruits.append("grape") # 요소 추가
 
-def show2():
-    global a
-    print("show2-A: ", a)
-    a = 20
-    print("show2-A2: ", a)
+print(fruits)
 
-show2()
-print("A: ", a)
+fruits.insert(2, "kiwi") # (인덱스위치, 요소이름)
 
+print(fruits)
+
+fruits.pop() # 마지막 요소 제거
+
+print(fruits)
+
+print(fruits.pop())
+
+print(fruits.pop(1))
+
+print(fruits)
+
+fruits.remove("cherry") # 지정 요소 제거, 같은 이름의 요소가 여러개라도 앞에 있는 요소 1개만 제거
+
+print(fruits)
 
 
