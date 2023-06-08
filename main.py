@@ -1,34 +1,51 @@
-a = {10, 20, 30}
-a = {10, 20, 30, "멋쟁이사자", "hansol", 40}
-a = {10, 20, 30, 40, 10, "멋쟁이사자", 20}
+stu = {101: 'Kim', 102: 'Lee', 103: 'Hong'}
+fees = {'kim': 2000, 'lee': 3000, 'hong': 8000}
+print(stu[101])
+print(stu[102])
+print(stu[103])
 
-b = set()
-print(type(b))
+print(fees['kim'])
+print(fees['lee'])
+print(fees['hong'])
 
-a.add(50)
-a.update([10, 20, 60, 70])
-print(a)
-a.remove('멋쟁이사자') # 지울 값이 없으면 에러가 남
-a.discard('멋쟁이사자') # remove와 동일하나 에러가 나지 않음
-print(a)
+stu[102] = 'Python'
+print(stu[102])
 
-new_set = a.copy()
-# new_set.clear()
-print(new_set)
+stu[104] = '멋쟁이사자'
+print(stu[104])
 
-intersection_a_new = a.intersection(new_set, a, b) # 교집합
-print(intersection_a_new)
+del stu[102]
+print(stu)
 
-union_a = a.union(new_set) # 합집합
-print('union_a: ', union_a)
+print(101 in stu)
+print(102 in stu)
 
-difference_a = a.difference(new_set) #차집합
-print('difference_a: ', difference_a)
+print(101 not in stu)
+print(102 not in stu)
 
-print(b.issubset(a)) # 부분집합
+# stu.clear()
+# print(stu)
 
-print(a.issuperset(b))
+new_stu = stu.copy()
 
-sym_a = a.symmetric_difference(new_set) # 대칭차집합 / 교집합을 뺀 나머지
-print('symmetric_difference: ', sym_a)
+key = (101, 102, 103)
+value = '멋쟁이사자'
+new_stu = dict.fromkeys(key, value)
+print(new_stu)
 
+print(stu[101])
+print(stu.get(101))
+
+print(stu.items())
+print(stu.keys())
+print(stu.values())
+stu[104] = '멋쟁이사자'
+print(stu)
+stu.update({104: '멋쟁이사자2'})
+print(stu)
+stu.pop(104)
+print(stu)
+stu.setdefault(104, 'Park')
+print(stu)
+
+print(stu.popitem())
