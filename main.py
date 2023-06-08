@@ -765,3 +765,21 @@ def add(x, *num):
 add(5, 2, 4)
 
 # command + option + L  자동서식지정 (들여쓰기 등)
+
+print("가변 키워드 인자")
+
+def add(**num):
+    z = num['a'] + num['b'] + num['c']
+    print("Addition: ", z)
+
+
+add(a=5, b=2, c=4, d=3) # 키워드에 없는 값을 넣어도 실행됨, 유연함, 그러나 추적 관찰이 어려움
+
+def add(x,**num):
+    z = x + num['a'] + num['b'] + num['c']
+    print("Addition: ", z)
+
+
+add(3, a=5, b=2, c=4, d=3)
+
+
