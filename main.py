@@ -1,12 +1,16 @@
-# 사용자 입력으로 리스트 만들기
+def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        yield a # 예약어
+        a, b = b, a + b
 
-user_input_list = []
-num_element = int(input("Enter Number of Element: "))
-for i in range(num_element):
-    user_input_list.append(input("Enter Element: "))
+runner = fibonacci(10)
 
-print("User Input List: ")
-for element in user_input_list:
-    print(element)
+print(next(runner))
+print(next(runner))
+print(next(runner))
+
+for num in runner:
+    print(num)
 
 
