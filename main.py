@@ -1,9 +1,13 @@
-def val(x):
-    print("Inside: ", x, id(x))
-    x += 1
-    print("Inside After: ", x, id(x))
+import sys # 리미트 지정
+print("default: ", sys.getrecursionlimit())
+sys.setrecursionlimit(3000)
+print("setting: ", sys.setrecursionlimit())
 
-x = 10
-print("Before Calling: ", x, id(x))
-val(x)
-print("After Calling: ", x, id(x))
+i = 0
+def myfun():
+    global i
+    i += 1
+    print("My function: ", i)
+    myfun()
+
+myfun()
