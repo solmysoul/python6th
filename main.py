@@ -687,14 +687,49 @@
 #
 # disp(show)
 
-def disp():
-    def show():
-        return "Show Function"
-    print("Disp Function")
-    return show
+# def disp():
+#     def show():
+#         return "Show Function"
+#     print("Disp Function")
+#     return show
+#
+# r_sh = disp()
+# print(r_sh(), type(r_sh))
 
-r_sh = disp()
-print(r_sh(), type(r_sh))
+# def disp(sh):
+#     print("Disp Function")
+#     return sh
+#
+# def show():
+#     return "Show Function"
+#
+# r_sh = disp(show)
+# print(r_sh())
+# print(show())
+
+# ========== 2023 06 08 2교시 ============
+# print("위치를 가진 인수")
+# def pw(x, y):
+#     z = x ** y
+#     print(z)
+#
+# pw(2, 5)
+# pw(5, 2, 3) #함수 인자가 2개만 되는 경우에는 3개를 넣었을 시 오류
+
+print("키워드 인자")
+
+def show(name, age):
+    print(f"Name: {name} Age: {age}") # 선언부
+
+show(name="멋쟁이사자", age= 26) # 함수파라미터를 키워드로 전달해서 순서 상관없이 실행할 수 있다. # 호출부
+# 모든 키워드 값을 넣지 않았을 시 실행이 되지 않는 오류 발생
+# 위와 같은 오류를 방지하기 위해 함수에 기본 값을 넣어줌
+# def show(name, age=27):
+
+
+# 컴파일 언어는 짠 코드를 특정 시점에 컴파일러가 파악해서 기계어로 변환
+# 스크립트 언어는 인터프리터를 가지고 있음, 인터프리터는 변환과정이 하나 더 있음, 입력한 코드를 구문 분석 후 재배치한 후 실행,
+# 즉 좀 더 유연함
 
 
 
