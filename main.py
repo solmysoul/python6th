@@ -1,40 +1,19 @@
-class ParentClass:
-    def __init__(self):
-        self.name = 'parent'
-        self.number = 10
+from datetime import timedelta
+from datetime import date
+from datetime import datetime
 
-    def __str__(self): # 프린트 할 때 예쁘게 출력해주는 함수
-        return f'ParentClass name : {self.name}, number : {self.number}'
+td = timedelta(days=10)
+print(td)
 
-    def add_num(self, new_number):
-        print('부모 : ', new_number, '만큼 더해야지')
-        self.number = self.number + new_number
+d1 = date(year=2023, month=5, day=5)
+d2 = date(year=2023, month=6, day=9)
 
-class ChildClass (ParentClass): # 부모 클래스를 상속 받아서 실행함, 아무 입력을 하지 않으면 부모 클래스와 똑같이 출력
-    def __init__(self):
-        super().__init__() # 재정의, 이 코드가 없으면 오류남
-        self.name = 'child'
+print(d1 == d2) # 등호 연산자에 대한 재정의
+print(d1 < d2)
+print(d1 > d2)
 
-    def __str__(self):
-        return f'ChildClass name : {self.name}, number : {self.number}'
+dt = datetime.today()
 
-    def add_num(self, new_number):
-        print('말 안듣는 자식: 고정적으로 5 더할건데?')
-        self.number = self.number + 5
-
-
-parent = ParentClass()
-child = ChildClass()
-print(parent)
-print(child)
-print("=============")
-
-print('7을 더하세요')
-parent.add_num(7)
-child.add_num(7)
-
-print(parent)
-print(child)
-
-
+formated_datetime = dt.strftime('%B, %d, %Y')
+print(formated_datetime)
 
