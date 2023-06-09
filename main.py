@@ -1,22 +1,36 @@
-import os
+import  os
 
-filename = 'example.txt'
+current_directory = os.getcwd() # 절대경로를 알려줌
+print(current_directory)
 
-print("파일이 존재하는지 확인하기")
+# os.mkdir('new_directory') # 파일추가
 
-if os.path.isfile(filename):
-    print(f"{filename}이 존재합니다.")
-else:
-    print(f"{filename}이 없습니다.")
+# os.makedirs('parent_directory/child_directory/grandchild_directory') # /를 통한 중첩 디렉토리
 
-file_object = open('list_example.txt', 'w')
+# os.chdir('new_directory')
+# current_directory2 = os.getcwd()
+# print(current_directory2)
 
-content_list = ["Python", "Java", "C++", "Javascript"]
+# with open('example.txt','w') as file_object:
+#     file_object.write('Hello, World!')
 
-for item in content_list:
-    print(file_object.tell())
-    file_object.write(item + '\n')
+# os.rename('new_directory', 'new_directory2') # 이름 변경
+#
+# os.rmdir('new_directory2') # 폴더 한개 삭제
+#
+# os.removedirs('parent_directory/child_directory/grandchild_directory') # 폴더 여러개 삭제
 
-file_object.close()
+# os.makedirs('parent_directory/child_directory/grandchild_directory')
+
+# for dirpath, dirnames, filenames in os.walk('.'):
+#     print(f"디렉터리 경로: {dirpath}")
+#     print(f"디렉터리 이름: {dirnames}")
+#     print(f"파일이름 : {filenames}")
+
+for dirpath, dirnames, filenames in os.walk('parent_directory'):
+    print(f"디렉터리 경로: {dirpath}")
+    print(f"디렉터리 이름: {dirnames}")
+    print(f"파일이름 : {filenames}")
+
 
 
