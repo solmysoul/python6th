@@ -1,18 +1,29 @@
-from array import *
+class Mobile:
+    fp = 'yes' # 클래스 멤버 변수
 
-def show(ar):
-    print("Please Array ar: ", ar)
-    print(type(ar))
-    for i in ar:
-        print(i)
-    return ar
 
-print()
-a = array('i', [101, 102, 103, 104])
-y = show(a)
-print("Return Array Y: ", y)
-print(type(y))
-for i in y:
-    print(i)
+realme = Mobile() # 생성자 함수
+redme = Mobile()
+geek = Mobile()
+
+print(Mobile.fp)
+print(realme.fp)
+print(redme.fp)
+print(geek.fp)
+
+Mobile.fp = 'no'
+
+print(Mobile.fp)
+print(realme.fp)
+print(redme.fp)
+print(geek.fp)
+
+realme.fp = 'Not Working' # 인스턴스 네임스페이스
+print("===========")
+print(Mobile.fp)
+print(realme.fp)
+print(redme.fp)
+print(geek.fp)
+
 
 
