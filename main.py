@@ -1,27 +1,26 @@
-class Vector:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
+import time # import 에서 해당 기능을 가져옴
+from datetime import datetime
+from datetime import date
 
-    # 연산자 오버로딩
-    def __add__(self, other):
-        return Vector(self.x + other.x, self.y + other.y )
-
-    # 메소드 오버라이딩
-    def __str__(self):
-        return f'Vector({self.x}, {self.y})'
-
-a = Vector(1, 2)
-b = Vector(3, 4)
-
-print(a)
-print(b)
-
-c = a + b
-print(c)
+print(time.time())
+print(time.ctime())
 
 
+dt = datetime(year=2023, month=5, day=5, hour=10, minute=30)
+print(dt)
+print(type(dt))
 
+current_datetime = datetime.now()
+print(current_datetime)
+
+current_ctime = time.ctime()
+print(current_ctime)
+
+d = date(year=2023, month=6, day=25) # 시간 정보 없이 날짜만
+print(d)
+
+current_date = date.today() # 시간 정보 없이 현재 날짜만
+print(current_date)
 
 
 
