@@ -1,10 +1,11 @@
-# 예외
+# 예외가 두개 이상인 경우
 try:
-    result = 10 / 0
-except ZeroDivisionError:
-    print("Error: Division by zero.")
+    numbers = int("Not a number")
+except ValueError:
+    print("Error: Invalid value.")
+except TypeError:
+    print("Error: Invalid type.")
 
-print("Program continue.")
 
 
 
