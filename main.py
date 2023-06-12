@@ -1,4 +1,5 @@
 import  os
+import time
 
 current_directory = os.getcwd() # 절대경로를 알려줌
 print(current_directory)
@@ -31,6 +32,4 @@ for dirpath, dirnames, filenames in os.walk('parent_directory'):
     print(f"디렉터리 경로: {dirpath}")
     print(f"디렉터리 이름: {dirnames}")
     print(f"파일이름 : {filenames}")
-
-
 
