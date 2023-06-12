@@ -1,8 +1,11 @@
-# 패키지
-from python6th.MyApp.Handlers.text_handler import handle_text
+# 예외
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Error: Division by zero.")
 
-input_text = "python package practice"
-handle_text(input_text)
+print("Program continue.")
+
 
 
 
