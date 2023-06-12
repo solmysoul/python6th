@@ -1,10 +1,12 @@
-# 예외가 두개 이상인 경우
+# 사용자 정의 예외
+class CustomException(Exception):
+    def __init__(self, message):
+        self.message = message
+
 try:
-    numbers = int("Not a number")
-except ValueError:
-    print("Error: Invalid value.")
-except TypeError:
-    print("Error: Invalid type.")
+    raise CustomException("This is a custom exception.")
+except CustomException as e:
+    print(f"Error: {e.message}")
 
 
 
