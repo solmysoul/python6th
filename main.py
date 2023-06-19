@@ -1,36 +1,26 @@
-class ListNode:
-    def __init__(self, value):
-        self.value = value
-        self.next = None
+# 깊이 우선 탐색
+# 그래프 생성
+graph = {
+    'A': ['B', 'C'],
+    'B': ['A', 'D', 'E'],
+    'C': ['A', 'F'],
+    'D': ['B'],
+    'E': ['B', 'F'],
+    'F': ['C', 'E']
+    # 각 요소가 갈 수 있는 목적지
+}
+# 맵을 저장하기 위한 자료형 생성
+visited = set()
 
-class Stack:
-    def __init__(self):
-        self.head = None
-        self.size = 0
+def dfs_iterative(start_node):
+    stack = [start_node] # 방문할 위치 쌓기
 
-    def is_empty(self):
-        return self.size == 0
+    while stack:
+        node = stack.pop()
+        if node not in visited:
+            print(node, end=' ')
+            visited.add(node)
+            stack.extend(reversed(graph[node]))
 
-    def push(self, value):
-        new_node = ListNode(value)
-        new_node.next = self.head
-        self.head = new_node
-        self.size += 1
-
-    def pop(self):
-        if self.is_empty():
-            raise IndexError("pop from an empty stack")
-        value = self.head.value
-        self.head = self.head.next
-        self.size -= 1
-        return value
-
-stack = Stack()
-stack.push(1)
-stack.push(3)
-stack.push(2)
-stack.push(4)
-stack.push(5)
-
-for _ in range(5):
-    print(stack.pop())
+snode = 'A'
+dfs_iterative(snode)
