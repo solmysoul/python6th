@@ -1,3 +1,5 @@
+import logging
+
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.shortcuts import render, get_object_or_404
@@ -6,9 +8,10 @@ from polls.models import Question, Choice
 
 
 # Create your views here.
+logger = logging.getLogger(__name__)
 def index(request):
     latest_question_list = Question.objects.all().order_by('-pub_date')[:5]
-    context = {'latest_question_list': latest_question_list}
+    context = {'latest_question_list': latest_question_list, 'value': '<strong>Hello, World</strong>'}
     return render(request, 'polls/index.html', context)
 
 
@@ -19,6 +22,7 @@ def detail(request, question_id):
 
 def vote(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
+    logger.fatal('vote')
     try:
         selected_choice = question.choice_set.get(pk=request.POST['choice'])
     except (KeyError, Choice.DoesNotExist):
